@@ -4,7 +4,7 @@ import android.content.Context
 import android.graphics.Color
 import android.util.AttributeSet
 import android.view.Gravity
-import com.dannyjung.sectionindexer.utils.dp
+import com.dannyjung.sectionindexer.utils.spToPx
 
 class SimpleSectionIndexerItem(
   context: Context,
@@ -14,7 +14,7 @@ class SimpleSectionIndexerItem(
 
   init {
     gravity = Gravity.CENTER
-    textSize = context.dp(12).toFloat()
+    textSize = context.spToPx(6f).toFloat()
     setTextColor(Color.BLACK)
   }
 
